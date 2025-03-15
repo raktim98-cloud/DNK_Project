@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import "tailwindcss";
+
+body {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.2px;
+  
+}
+.custom-font {
+  font-family: 'Dancing Script', cursive; /* Custom font for specific elements */
+}
+@keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  
+  @keyframes pause {
+    0%, 100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  
+  .animate-marquee {
+    animation: marquee 10s linear infinite;
+  }
+  
+  .animate-pause {
+    animation: pause 1s linear;
+  }
