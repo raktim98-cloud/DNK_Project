@@ -1,19 +1,11 @@
 const Banner = () => {
   return (
-<<<<<<< HEAD
     <div className="banner relative w-full bg-black/35 min-h-[400px] flex items-center justify-center">
-=======
-    <div className="banner relative w-full bg-gradient-to-r bg-black/60 min-h-[400px] flex items-center justify-center">
->>>>>>> 76d3b264a04957ffae163e64bbb3b5d6d68fc353
       <div className=" pt-24 pb-50 relative w-full bg-gradient-to-r  min-h-[400px] grid grid-cols-2">
       <div className="text-center text-white space-y-6 px-4">
         {/* Head */}
         <div className="space-y-2">
-<<<<<<< HEAD
           <h1 className="text-[66px] font-bold animate-pulse px-[60px] leading-1.2">
-=======
-          <h1 className="text-6xl font-bold animate-pulse px-[60px] leading-1.3">
->>>>>>> 76d3b264a04957ffae163e64bbb3b5d6d68fc353
             Raining Offers For Hot Summer!
           </h1>
           
