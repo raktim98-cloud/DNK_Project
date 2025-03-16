@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 
+=======
+import Nav from "../Components/Nav"
+>>>>>>> 76d3b264a04957ffae163e64bbb3b5d6d68fc353
 import Banner from '../Components/Banner';
 import Marquee from '../Components/Marquee';
 import Card from '../Components/Card';
 import ProductsSection from '../Components/ProductsSection';
 import SpecialEddition from "../Components/SpecialEddition";
+<<<<<<< HEAD
 import Best from "../Components/Best";
+=======
+>>>>>>> 76d3b264a04957ffae163e64bbb3b5d6d68fc353
 
 
 
@@ -24,7 +31,10 @@ function Home() {
     <Card/>
     <ProductsSection/>
     <SpecialEddition/>
+<<<<<<< HEAD
     <Best/>
+=======
+>>>>>>> 76d3b264a04957ffae163e64bbb3b5d6d68fc353
   </div>
   )
 }

@@ -75,7 +75,11 @@ const ProductsSection = () => {
   ];
 
   return (
+<<<<<<< HEAD
     <div className=" px-4 pt-10 pb-25 bg-[#F5F7F9]">
+=======
+    <div className=" px-4 pt-10 bg-[#F5F7F9]">
+>>>>>>> 76d3b264a04957ffae163e64bbb3b5d6d68fc353
       <div className="container mx-auto">
         <div>
             <div className='relative group bg-[#F5F7F9]  flex items-center justify-center pt-10 pb-15 '>
