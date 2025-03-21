@@ -1,11 +1,18 @@
 import { NavLink } from "react-router";
+import { motion } from "framer-motion"
 
 
 
 function Nav() {
   return (
     <>
-      <nav className="flex justify-between items-center px-4 py-6 bg-[rgba(21,99,144,0.7)]">
+      <section>
+        <div className="container mx-auto">
+        <motion.nav
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }} 
+        className="flex justify-between items-center px-4 py-6 bg-transparent">
         
         <div className="logo">
         <div className="max-w-[140px] w-[140px]">
@@ -85,7 +92,9 @@ function Nav() {
         </span>
         </ul>
         
-      </nav>
+      </motion.nav>
+        </div>
+      </section>
     </>
   );
 }

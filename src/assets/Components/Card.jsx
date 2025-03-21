@@ -2,7 +2,7 @@ import React from 'react';
 
 const Card = () => {
   return (
-    <div className="bg-white py-30 flex items-center justify-center gap-4">
+    <div className="bg-white py-20 flex items-center justify-center gap-4">
         <div className="relative overflow-hidden rounded-lg shadow-lg  max-w-sm ">
         <img 
         src="image_1.jpg" 
