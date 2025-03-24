@@ -1,18 +1,18 @@
 import { NavLink } from "react-router";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 
 
 function Nav() {
   return (
     <>
-      <section>
+      <section className="bg-[rgba(20,98,143,0.75)]">
         <div className="container mx-auto">
         <motion.nav
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }} 
-        className="flex justify-between items-center px-4 py-6 bg-transparent">
+        className="flex justify-between items-center px-4 py-6">
         
         <div className="logo">
         <div className="max-w-[140px] w-[140px]">

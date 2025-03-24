@@ -1,95 +1,94 @@
-import React from 'react';
+import { motion } from "framer-motion";
 
-const Card = () => {
+
+const Card = ({ title, description, buttonText, imageUrl }) => {
+
+
+  const textVariants_1 = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0 },
+  };
+  // const textVariants_2 = {
+  //   hidden: { opacity: 0, x: 50 },
+  //   visible: { opacity: 1, x: 0 },
+  // };
+  
+  // // button var
+  // const buttonVariants = {
+  //   hidden: { opacity: 0, y: 10 },
+  //   visible: { opacity: 1, y: 0 },
+  // };
+
   return (
-    <div className="bg-white py-20 flex items-center justify-center gap-4">
-        <div className="relative overflow-hidden rounded-lg shadow-lg  max-w-sm ">
-        <img 
-        src="image_1.jpg" 
-        alt="image"
-        className="w-full h-full object-cover rounded-t-lg overflow-hidden "
-      />
-      <div className="color size-full bg-[rgba(33,21,144,0.4)] absolute top-0 left-0 -z-0"></div>
-      {/* Card Content */}
-      <div className="p-6 text-center">
-        {/* Discount Offer */}
-        <h3 className="text-2xl font-bold text-white mb-2 absolute px-4 top-[60%]">
-          20% Off On Tank Tops
-        </h3>
-
-        {/* Description */}
-        <p className="text-white mb-4 absolute top-[70%] left-4 px-[23px]">
-          Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Proin ac dictum.
-        </p>
-
-        {/* Shop Now Button */}
-        <a
-          href="/shop-now"
-          className="absolute left-[116px] top-[85%] inline-block  px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-        >
-          SHOP NOW
-        </a>
+    <motion.div 
+    
+    
+      initial="hidden"
+      animate="visible"
+      variants={textVariants_1}
+      transition={{ duration: 1, delay: 0.2 }}
+    
+    className="rounded overflow-hidden shadow-lg bg-gray-200">
+      <img className="w-full " src={imageUrl} alt={title} />
+      <div>
+        <div className="px-6 py-4">
+          <div className="font-bold text-xl mb-2">{title}</div>
+          <p className="text-gray-700 text-base">
+            {description}
+          </p>
+        </div>
+        <div className="px-6 pt-4 pb-2">
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            {buttonText}
+          </button>
+        </div>
       </div>
-    </div>
-        <div className="relative overflow-hidden rounded-lg shadow-lg  max-w-sm ">
-        <img 
-        src="image_2.jpg" 
-        alt="image"
-        className="w-full h-full object-cover rounded-t-lg overflow-hidden "
-      />
-      <div className="color size-full bg-[rgba(33,21,144,0.4)] absolute top-0 left-0 -z-0"></div>
-      {/* Card Content */}
-      <div className="p-6 text-center">
-        {/* Discount Offer */}
-        <h3 className="text-2xl font-bold text-white mb-2 absolute px-4 top-[60%]">
-          20% Off On Tank Tops
-        </h3>
-
-        {/* Description */}
-        <p className="text-white mb-4 absolute top-[70%] left-4 px-[23px]">
-          Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Proin ac dictum.
-        </p>
-
-        {/* Shop Now Button */}
-        <a
-          href="/shop-now"
-          className="absolute left-[116px] top-[85%] inline-block  px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-        >
-          SHOP NOW
-        </a>
-      </div>
-    </div>
-        <div className="relative overflow-hidden rounded-lg shadow-lg  max-w-sm ">
-        <img 
-        src="image_3.jpg" 
-        alt="image"
-        className="w-full h-full object-cover rounded-t-lg overflow-hidden "
-      />
-      <div className="color size-full bg-[rgba(33,21,144,0.4)] absolute top-0 left-0 -z-0"></div>
-      {/* Card Content */}
-      <div className="p-6 text-center">
-        {/* Discount Offer */}
-        <h3 className="text-2xl font-bold text-white mb-2 absolute px-4 top-[60%]">
-          20% Off On Tank Tops
-        </h3>
-
-        {/* Description */}
-        <p className="text-white mb-4 absolute top-[70%] left-4 px-[23px]">
-          Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Proin ac dictum.
-        </p>
-
-        {/* Shop Now Button */}
-        <a
-          href="/shop-now"
-          className="absolute left-[116px] top-[85%] inline-block  px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-        >
-          SHOP NOW
-        </a>
-      </div>
-    </div>
-    </div>
+    </motion.div>
   );
 };
 
+const CardList = () => {
+  const cards = [
+    {
+      title: "20% Off On Tank Tops",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.",
+      buttonText: "SHOP NOW",
+      imageUrl: "/image_1.jpg" // Replace with your image URL
+    },
+    {
+      title: "Latest Eyewear For You",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.",
+      buttonText: "SHOP NOW",
+      imageUrl: "/image_2.jpg" // Replace with your image URL
+    },
+    {
+      title: "Let's Lorem Suit Up!",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.",
+      buttonText: "CHECK OUT",
+      imageUrl: "/image_3.jpg" // Replace with your image URL
+    }
+  ];
 
-export default Card;
+  return (
+    <section className='bg-white'>
+      <div className="container mx-auto">
+        <div className=" grid grid-cols-3 items-center justify-center gap-3">
+      {cards.map((card, index) => (
+        <Card 
+          key={index} 
+          title={card.title} 
+          description={card.description} 
+          buttonText={card.buttonText} 
+          imageUrl={card.imageUrl} 
+        />
+      ))}
+    </div>
+    </div>
+    </section>
+  );
+};
+
+export default CardList;
+
+
+

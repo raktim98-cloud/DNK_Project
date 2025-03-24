@@ -19,7 +19,9 @@ const buttonVariants = {
 };
 
   return (
-    <div className="banner relative w-full bg-black/35 min-h-[400px] flex items-center justify-center">
+    <section className="bg-black/35">
+      <div className="container mx-auto">
+      <div className="banner relative w-full min-h-[400px] flex items-center justify-center">
       <div className=" pt-24 pb-50 relative w-full bg-gradient-to-r  min-h-[400px] grid grid-cols-2">
       <div className="text-center text-white space-y-6 px-4">
         {/* Head */}
@@ -72,6 +74,8 @@ const buttonVariants = {
       
     </div>
     </div>
+      </div>
+    </section>
   );
 };
 

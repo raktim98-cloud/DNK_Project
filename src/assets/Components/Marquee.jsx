@@ -84,7 +84,7 @@ const Marquee = ({ skills = skillList }) => {
   }, [windowWidth]);
 
   return (
-    <div className="relative overflow-x-hidden bg-white pt-20">
+    <div className="overflow-x-hidden bg-white py-15">
       <div id="skills" className="w-max whitespace-nowrap " ref={skillsElementRef}>
         <div className="flex gap-8 lg:gap-24">
           {skills.map(({ name, logo }, index) => (
