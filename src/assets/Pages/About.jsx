@@ -1,6 +1,10 @@
+
+
 import AboutBanner from "../Components/AboutBanner"
+import AboutFollow from "../Components/AboutFollow"
 import AboutTeam from "../Components/AboutTeam"
 import AboutWho from "../Components/AboutWho"
+import Best from "../Components/Best"
 
 
 function About() {
@@ -15,6 +19,8 @@ function About() {
       <AboutBanner/>
       <AboutWho/>
       <AboutTeam/>
+      <AboutFollow/>
+      <Best/>
 
     </div>
   )

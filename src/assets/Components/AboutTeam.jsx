@@ -42,6 +42,7 @@ const AboutTeam = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="container mx-auto">
         {/* Header Section */}
+        <div className="px-30">
         <div className="text-center mb-16">
           <p className="text-lg font-light text-gray-500 mb-2">A Few Words About</p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Our Team</h2>
@@ -74,6 +75,7 @@ const AboutTeam = () => {
               <p className="text-gray-500">{member.position}</p>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </section>
