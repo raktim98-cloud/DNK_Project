@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Card = ({ title, description, buttonText, imageUrl }) => {
 
 
-  const textVariants_1 = {
+  const textVariants_4 = {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 },
   };
@@ -25,23 +25,29 @@ const Card = ({ title, description, buttonText, imageUrl }) => {
     
       initial="hidden"
       animate="visible"
-      variants={textVariants_1}
+      variants={textVariants_4}
       transition={{ duration: 1, delay: 0.2 }}
     
-    className="rounded overflow-hidden shadow-lg bg-gray-200">
-      <img className="w-full " src={imageUrl} alt={title} />
+    className="relative rounded shadow-lg ">
+      <div className="w-[363px] h-[481px]  ">
+      <img className="size-full overflow-hidden object-cover  " src={imageUrl} alt={title} />
+      </div>
+      <div className="absolute inset-0 bg-black/50"></div>
+      
+      
       <div>
-        <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2">{title}</div>
-          <p className="text-gray-700 text-base">
+        <div className="px-6 py-4 absolute left-0 bottom-0 translate-x-5 -translate-y-7">
+          <div className=" text-white font-bold text-xl mb-2">{title}</div>
+          <p className=" text-white  text-lg pb-6">
             {description}
           </p>
-        </div>
-        <div className="px-6 pt-4 pb-2">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          
+          <button className="bg-white transition-all duration-500 hover:bg-black text-black hover:text-white font-bold py-2.5 px-5">
             {buttonText}
           </button>
+        
         </div>
+        
       </div>
     </motion.div>
   );
@@ -72,7 +78,7 @@ const CardList = () => {
   return (
     <section className='bg-white'>
       <div className="container mx-auto">
-        <div className=" grid grid-cols-3 items-center justify-center gap-3">
+        <div className="flex items-center justify-center gap-10">
       {cards.map((card, index) => (
         <Card 
           key={index} 

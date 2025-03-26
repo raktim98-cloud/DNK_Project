@@ -1,3 +1,6 @@
+
+
+import { motion } from "framer-motion";
 import { GiGymBag } from "react-icons/gi";
 const ProductsSection = () => {
   const products = [
@@ -74,6 +77,8 @@ const ProductsSection = () => {
     
   ];
 
+ 
+
   return (
     <div className=" px-4 pt-10 pb-25 bg-[#F5F7F9]">
       <div className="container mx-auto">
@@ -85,6 +90,9 @@ const ProductsSection = () => {
             <div className="grid grid-cols-5 gap-6">
               {products.map((product, index) => (
                 <div
+
+               
+
                   key={index}
                   className={`p-6 rounded-lg shadow-md relative group ${
                     product.isCustom 
@@ -93,13 +101,24 @@ const ProductsSection = () => {
                   }`}
                 >
                     {!product.isCustom && product.image && (
-                    <div className="mb-4">
+                    <motion.div 
+                    
+                    initial={{ y: 20 }}
+                    animate={{ y: 0 }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+
+
+                    
+                   
+                    
+                    className="mb-4">
                       <img 
                         src={product.image}
                         alt={product.title}
                         className="w-full object-cover rounded-t-lg"
                       />
-                    </div>
+                    </motion.div>
                   )}
                   {product.isCustom ? (
                     <h3 className="text-2xl font-bold text-gray-700">{product.title}</h3>
