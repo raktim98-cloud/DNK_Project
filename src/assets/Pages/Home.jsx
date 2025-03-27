@@ -14,16 +14,16 @@ function Home() {
     
     <div className="min-h-screen">
     
-    <div
+    {/* <div
       className="fixed top-0 left-0 w-full h-full bg-cover bg-center z-[-10]"
       style={{ backgroundImage: "url('/home-new-bg-free-img (1).jpg')" }}
-    ></div>
-    <Banner />
+    ></div> */}
+    {/* <Banner />
     <Marquee/>
     <Card/>
     <ProductsSection/>
     <SpecialEddition/>
-    <Best/>
+    <Best/> */}
   </div>
   )
 }

@@ -10,8 +10,7 @@ function Layout() {
     <div>
         <Nav/>
         <Outlet/>
-        <Footer/>
-        <Raktim/>
+        
     </div>
   )
 }
