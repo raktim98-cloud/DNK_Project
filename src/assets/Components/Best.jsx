@@ -31,10 +31,10 @@ function Best() {
         },
     ]
   return (
-    <section className="py-30 bg-gray-50">
+    <section className="py-10 md:py-20 lg:py-30 bg-gray-50">
         <div className="container mx-auto">
             
-                <div className="grid grid-cols-4 gap-5 px-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-20">
                     {features.map((features)=>(
                         <div className="text-center p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow flex flex-col gap-3 items-center justify-center">
                             

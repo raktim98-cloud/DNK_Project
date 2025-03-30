@@ -87,7 +87,7 @@ const ProductsSection = () => {
               <h2 className=' text-5xl font-medium'>Featured Products</h2>
               <div className="absolute bottom-7 left-120 w-0 h-1 bg-blue-500 transition-all duration-300 group-hover:w-[25%]"></div>
             </div>
-            <div className="grid grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
               {products.map((product, index) => (
                 <div
 

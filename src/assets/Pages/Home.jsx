@@ -19,11 +19,12 @@ function Home() {
       style={{ backgroundImage: "url('/home-new-bg-free-img (1).jpg')" }}
     ></div>
      <Banner />
-    {/*<Marquee/>
+    <Marquee/>
     <Card/>
+    
     <ProductsSection/>
     <SpecialEddition/>
-    <Best/> */}
+    <Best/>
   </div>
   )
 }
