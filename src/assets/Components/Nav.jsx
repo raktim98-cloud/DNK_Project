@@ -96,8 +96,8 @@ function Nav() {
       {/* popup menu */}
       {showMenu && (
       
-        <div className="absolute lg:hidden w-full text-center bg-[rgba(22,95,134,0.87)] py-10 z-20">
-          <button className="flex bg-[#000] transition-all hover:bg-red-700 hover:text-white text-white text-2xl px-2.5 py-3" onClick={closeMenu}><IoIosCloseCircleOutline /></button>
+        <div className="absolute  lg:hidden w-full text-center bg-[rgba(22,95,134,0.97)] py-10 z-20 top-0 left-0">
+          <button className="flex bg-[rgba(22,42,134,0.89)]  transition-all hover:bg-red-700 hover:text-white text-white text-2xl px-2.5 py-3" onClick={closeMenu}><IoIosCloseCircleOutline /></button>
           <ul className="!text-black">
             {menus?.map((item) => (
               <MenuItem key={item.id} text={item.text} link={item.link} />
