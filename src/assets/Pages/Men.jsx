@@ -17,11 +17,11 @@ function Men() {
     setPriceRange(prev => ({ ...prev, [name]: parseInt(value, 10) }));
   };
   return (
-    <section className="pb-20 pt-30 bg-[#F5F7F9]">
+    <section className="pb-20 pt-5 md:pt-10 lg:pt-30 bg-[#F5F7F9]">
       <div className="containe mx-auto">
-        <div className="grid grid-cols-[400px_1fr] px-5">
+        <div className="grid grid-cols-1  md:grid-cols-[400px_1fr] lg:px-5">
           {/* left */}
-          <div className="">
+          <div className="order-2 md:order-1">
             <form action="#" className="flex items-center gap-1.5">
               <input className="px-[12px] py-[8px] border border-[#e2e2e2;] focus:border-black/50 focus:outline-dotted transition-colors bg-white" type="search" name="search" id="search" placeholder="Search Products..." />
               <button type="submit" className="px-2 py-[12px] bg-[#0084d6;] text-white"><FaGreaterThan /></button>
@@ -79,10 +79,10 @@ function Men() {
             </div>
           </div>
           {/* product_part */}
-          <div className="px-25 py-30">
+          <div className="order-1 md:order-2 md:px-5 md:py-5 lg:px-10 lg:py-30">
             <div>
             <div className="bg-white px-6 py-15">
-    <h1 className="text-6xl font-bold pb-20">Men</h1>
+    <h1 className="text-[50px] md:leading-[70px]  pb-5 lg:pb-[20px]">Men</h1>
     <p className="text-gray-700 mb-4">
         Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
     </p>

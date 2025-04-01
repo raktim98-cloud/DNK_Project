@@ -80,11 +80,11 @@ const MenProducts = () => {
       <div className="container mx-auto">
         <div>
            
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
               {products.map((product, index) => (
                 <div
                   key={index}
-                  className={`p-6 rounded-lg shadow-md relative group ${
+                  className={`p-1 md:p-2 lg:p-6 rounded-lg shadow-md relative group ${
                     product.isCustom 
                       ? "bg-gray-100 flex items-center justify-center min-h-[200px]"
                       : "bg-white hover:shadow-lg transition-shadow"

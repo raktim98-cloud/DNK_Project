@@ -51,7 +51,7 @@ function Nav() {
   const closeMenu = () => setShowMenu(false);
 
   return (
-    <nav className="bg-[rgba(0,0,0,0.29)]">
+    <nav className="bg-[rgba(2,21,190,0.27)]">
       <div className="container mx-auto">
         {/* nav div */}
         <div className="grid grid-cols-[200px_auto] lg:grid-cols-[200px_1fr_auto] lg:items-center lg:justify-start px-4 py-1">

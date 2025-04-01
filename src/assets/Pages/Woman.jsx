@@ -89,7 +89,7 @@ function Woman() {
           <div className="order-1 md:order-2 p-3 md:px-5 md:py-5 lg:px-10 lg:py-30">
             <div>
               <div className="bg-white px-6 py-15">
-                <h1 className="text-6xl font-bold pb-20">Women</h1>
+                <h1 className="text-[30px] md:text-[50px] md:leading-[70px]  pb-5 lg:pb-[20px]">Women</h1>
                 <p className="text-gray-700 mb-4">
                   Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
                   mauris vitae erat consequat auctor eu in elit.

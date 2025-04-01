@@ -12,15 +12,15 @@ function About() {
     <div className="min-h-screen">
     
     <div
-      className="fixed top-0 left-0 w-full h-full bg-cover bg-center z-[-10]"
+      className="fixed top-0 left-0 w-full h-full bg-cover bg-bottom z-[-10] "
       style={{ backgroundImage: "url('/About_Banner_1.jpg')" }}
     ></div>
 
       <AboutBanner/>
-      <AboutWho/>
+       <AboutWho/>
       <AboutTeam/>
       <AboutFollow/>
-      <Best/>
+      {/*<Best/> */}
 
     </div>
   )
